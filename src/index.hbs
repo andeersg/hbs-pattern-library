@@ -1,0 +1,17 @@
+---
+title: Patterns Library
+subtitle: Awesome patterns.
+---
+
+{{#md-posts 'src/patterns/*.hbs'}}
+  <div class="pattern" id="{{file}}">
+    <details class="pattern-details">
+        <summary class="pattern-name">{{file}} <a class="pattern-link" rel="bookmark" href="#{{file}}" title="View just this pattern">#</a></summary>
+            <pre><code class="pattern-markup  language-markup">{{{urlencode body}}}</code></pre>
+        <pre class="pattern-usage"><strong>Usage:</strong>{{usage}}</pre>
+    </details>
+    <div class="pattern-preview">
+      {{{body}}}
+    </div>
+  </div>
+{{/md-posts}}
