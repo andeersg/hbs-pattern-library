@@ -1,3 +1,9 @@
+/**
+ * http://stackoverflow.com/a/19023007/437385
+ *
+ * Code from this comment.
+ */
+
 var glob = require('glob');
 var fs = require('fs');
 var yamlFront = require('yaml-front-matter');
