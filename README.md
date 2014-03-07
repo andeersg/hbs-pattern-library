@@ -6,3 +6,5 @@ This code is based on [ALA Pattern Library](https://github.com/alistapart/patter
 ## How to use
 
 You need Node.JS, NPM, and Grunt.js to compile this.
+
+## Work in progress
