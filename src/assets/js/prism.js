@@ -1,15 +1,4 @@
-'use strict';
-
-jQuery(document).ready(function($){
-  $('.pattern').each(function(i, e){
-    $('#pattern-select')
-      .append('<option value="' +
-        $(this).attr('id') + '">' + $(this).attr('id') + '</option>');
-  });
-  $('#pattern-select').change(function(){
-    $('body').scrollTop($('#' + this.value).offsetTop);
-  });
-});;/**
+/**
  * Prism: Lightweight, robust, elegant syntax highlighting
  * MIT license http://www.opensource.org/licenses/mit-license.php/
  * @author Lea Verou http://lea.verou.me
