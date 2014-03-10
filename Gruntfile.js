@@ -1,7 +1,5 @@
-'use strict';
-
 module.exports = function(grunt) {
-
+  'use strict';
   // Project configuration.
   grunt.initConfig({
 
@@ -18,14 +16,15 @@ module.exports = function(grunt) {
       }
     },
     clean: {
-      example: ['dist/*.html', 'dist/assets/js/*.js', 'dist/assets/css/*.css']
+      all: ['dist/*.html', 'dist/assets/js/*.js', 'dist/assets/css/*.css'],
+      main: ['dist/*.html']
     },
     concat: {
       options: {
         separator: ';'
       },
       dist: {
-        src: ['src/assets/js/*.js'],
+        src: ['src/assets/js/*.js', 'src/assets/js/lib/*.js'],
         dest: 'dist/assets/js/patterns.js'
       }
     },
@@ -41,15 +40,14 @@ module.exports = function(grunt) {
       }
     },
     jshint: {
-      files: ['Gruntfile.js', 'dev/js/*.js'],
+      files: ['Gruntfile.js', 'src/assets/js/*.js'],
       options: {
         globals: {
           jQuery: true,
           console: true,
           module: true,
           document: true
-        },
-        jshintrc: '.jshintrc'
+        }
       }
     },
     compass: {
@@ -61,14 +59,33 @@ module.exports = function(grunt) {
         }
       }
     },
+    watch: {
+      options: {
+        atBegin: true
+      },
+      css: {
+        files: ['src/assets/scss/**/*.scss'],
+        tasks: ['compass'],
+      },
+      js: {
+        files: ['<%= jshint.files %>'],
+        tasks: ['jshint', 'concat']
+      },
+      assemble: {
+        files: ['src/layouts/*.hbs', 'src/helpers/*.js', 'src/patterns/*', 'src/*.hbs'],
+        tasks: ['clean:main', 'assemble']
+      }
+    }
   });
 
   // Load npm plugins to provide necessary tasks.
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default tasks to be run.
-  grunt.registerTask('default', ['clean', 'compass', 'concat', 'assemble']);
+  grunt.registerTask('default', ['clean:all', 'compass', 'concat', 'assemble']);
 };

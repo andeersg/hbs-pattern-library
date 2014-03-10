@@ -1,74 +1,88 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff");
+}
+
 /* line 1, ../../../src/assets/scss/_patterns.scss */
 .xx {
   padding: 1em 0;
   margin: 0;
-  background-color: white;
+  background-color: #fff;
 }
 
 /* line 7, ../../../src/assets/scss/_patterns.scss */
 .xx-title {
-  margin: 4.5em 0 0.25em 0;
+  margin: 4.5em 0 .25em;
   text-align: center;
 }
 
 @media (min-width: 40em) {
-  /* line 14, ../../../src/assets/scss/_patterns.scss */
+  /* line 13, ../../../src/assets/scss/_patterns.scss */
   .xx-title {
     margin-top: 2em;
   }
 }
-/* line 20, ../../../src/assets/scss/_patterns.scss */
+/* line 18, ../../../src/assets/scss/_patterns.scss */
 .xx-subtitle {
   text-align: center;
 }
 
-/* line 24, ../../../src/assets/scss/_patterns.scss */
+/* line 22, ../../../src/assets/scss/_patterns.scss */
 .xx .swatches {
   margin: 1em 0;
   list-style: none;
 }
 
-/* line 29, ../../../src/assets/scss/_patterns.scss */
+/* line 27, ../../../src/assets/scss/_patterns.scss */
 .xx .swatch {
   float: left;
   margin-bottom: 1em;
   width: 100%;
-  background-color: white;
+  background-color: #fff;
   padding: 10px 0;
-  padding: 0.625rem 0;
+  padding: .625rem 0;
 }
 
-/* line 39, ../../../src/assets/scss/_patterns.scss */
+/* line 36, ../../../src/assets/scss/_patterns.scss */
 .xx .swatch:last-child {
   margin-right: 0;
 }
 
-/* line 43, ../../../src/assets/scss/_patterns.scss */
+/* line 40, ../../../src/assets/scss/_patterns.scss */
 .xx .swatch-details {
   padding: 0 8px;
-  padding: 0 0.5rem;
+  padding: 0 .5rem;
 }
 
 @media (min-width: 40em) {
-  /* line 49, ../../../src/assets/scss/_patterns.scss */
+  /* line 46, ../../../src/assets/scss/_patterns.scss */
   .xx .swatch {
     width: 31%;
     margin-right: 2%;
   }
 }
 @media (min-width: 50em) {
-  /* line 55, ../../../src/assets/scss/_patterns.scss */
+  /* line 53, ../../../src/assets/scss/_patterns.scss */
   .xx .swatch {
     width: 23%;
   }
 }
 @media (min-width: 60em) {
-  /* line 60, ../../../src/assets/scss/_patterns.scss */
+  /* line 59, ../../../src/assets/scss/_patterns.scss */
   .xx .swatch {
     width: 18.4%;
   }
 }
-/* line 65, ../../../src/assets/scss/_patterns.scss */
+/* line 64, ../../../src/assets/scss/_patterns.scss */
 .xx .swatch-preview {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -76,28 +90,28 @@
   float: left;
   height: 60px;
   width: 100%;
-  margin: 0 0.8em 0.5em 0;
+  margin: 0 .8em .5em 0;
 }
 
-/* line 75, ../../../src/assets/scss/_patterns.scss */
+/* line 74, ../../../src/assets/scss/_patterns.scss */
 .xx .swatch-details {
   display: block;
   margin: 0;
   padding: 1em 0;
-  font-size: 0.8em;
+  font-size: .8em;
   color: #fff;
   text-align: center;
   clear: both;
-  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Gotham A","Gotham B","Open Sans Regular","Verdana","Helvetica","Arial";
 }
 
 @media (min-width: 70em) {
-  /* line 87, ../../../src/assets/scss/_patterns.scss */
+  /* line 86, ../../../src/assets/scss/_patterns.scss */
   .xx .swatch-details {
     clear: none;
   }
 }
-/* line 92, ../../../src/assets/scss/_patterns.scss */
+/* line 91, ../../../src/assets/scss/_patterns.scss */
 .xx .pattern {
   clear: both;
   float: left;
@@ -107,27 +121,27 @@
   width: 100%;
 }
 
-/* line 101, ../../../src/assets/scss/_patterns.scss */
+/* line 100, ../../../src/assets/scss/_patterns.scss */
 .xx-patchwork .pattern {
   margin: 0;
   border: none;
   padding: 0;
 }
 
-/* line 107, ../../../src/assets/scss/_patterns.scss */
+/* line 106, ../../../src/assets/scss/_patterns.scss */
 .xx .pattern-name {
-  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Gotham A","Gotham B","Open Sans Regular","Verdana","Helvetica","Arial";
   font-size: 16px;
   text-transform: none;
   margin: 0;
 }
 
-/* line 114, ../../../src/assets/scss/_patterns.scss */
+/* line 113, ../../../src/assets/scss/_patterns.scss */
 .xx .pattern-details {
   color: #004b6a;
   background-color: #fbf9f9;
-  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4);
-  padding: 0.5em 1%;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+  padding: .5em 1%;
   width: 96%;
   margin-left: 2%;
   overflow: hidden;
@@ -137,7 +151,7 @@
   border-radius: 3px 3px 0 0;
 }
 
-/* line 128, ../../../src/assets/scss/_patterns.scss */
+/* line 127, ../../../src/assets/scss/_patterns.scss */
 .xx .pattern-markup {
   border: 1px solid;
   border-color: #e5e5e5;
@@ -151,44 +165,43 @@
   float: left;
 }
 
-/* line 142, ../../../src/assets/scss/_patterns.scss */
-.xx .pattern-markup,
-.xx :not(pre) > code[class*="language-"] {
+/* line 140, ../../../src/assets/scss/_patterns.scss */
+.xx .pattern-markup, .xx :not(pre) > code[class*="language-"] {
   padding: 1em 2% !important;
   line-height: 1.7em;
 }
 
-/* line 147, ../../../src/assets/scss/_patterns.scss */
+/* line 145, ../../../src/assets/scss/_patterns.scss */
 .xx .pattern-details:hover {
   cursor: pointer;
 }
 
-/* line 151, ../../../src/assets/scss/_patterns.scss */
+/* line 149, ../../../src/assets/scss/_patterns.scss */
 .xx .pattern .pattern-code {
   border: 1px solid #ccc;
   float: left;
   width: 67.5%;
-  margin: 0.5em 0 0.5em 0;
+  margin: .5em 0;
   font-family: Menlo,Monaco,'Courier New',Courier,monospace;
   font-size: 13px;
   line-height: 1.2em;
-  padding: 0.5em;
+  padding: .5em;
 }
 
-/* line 162, ../../../src/assets/scss/_patterns.scss */
+/* line 160, ../../../src/assets/scss/_patterns.scss */
 .xx .pattern-usage {
   float: right;
   width: 30%;
-  margin: 1.25em 0 0.5em 0;
+  margin: 1.25em 0 .5em;
   font-size: 13px;
   white-space: pre-line;
   line-height: 1.4em;
-  font-family: "Gotham A", "Gotham B", "Open Sans Regular", "Verdana", "Helvetica", "Arial";
+  font-family: "Gotham A","Gotham B","Open Sans Regular","Verdana","Helvetica","Arial";
 }
 
-/* line 172, ../../../src/assets/scss/_patterns.scss */
+/* line 170, ../../../src/assets/scss/_patterns.scss */
 .xx .pattern-preview {
-  padding: 0.1px 10px;
+  padding: .1px 10px;
   background-color: #fff;
   border: 1px solid;
   border-color: #e5e5e5;
@@ -199,35 +212,49 @@
   float: left;
 }
 
-/* line 185, ../../../src/assets/scss/_patterns.scss */
-.xx .pattern-preview :not(pre) > code[class*=language-], pre[class*=language-],
-.xx .pattern-preview pre[class*=language-] {
+/* line 182, ../../../src/assets/scss/_patterns.scss */
+.xx .pattern-preview :not(pre) > code[class*=language-], pre[class*=language-], .xx .pattern-preview pre[class*=language-] {
   background-color: transparent;
 }
 
-/* line 189, ../../../src/assets/scss/_patterns.scss */
+/* line 186, ../../../src/assets/scss/_patterns.scss */
 .xx .pattern {
   clear: both;
 }
 
-/* line 193, ../../../src/assets/scss/_patterns.scss */
+/* line 190, ../../../src/assets/scss/_patterns.scss */
 .xx .pattern-link {
   float: right;
-  padding: 0 0 0 0.5em;
+  padding: 0 0 0 .5em;
 }
 
-/* line 200, ../../../src/assets/scss/_patterns.scss */
-.xx .pattern-link:hover,
-.xx .pattern-link:focus,
-.xx .pattern-link:active {
+/* line 195, ../../../src/assets/scss/_patterns.scss */
+.xx .pattern-link:hover, .xx .pattern-link:focus, .xx .pattern-link:active {
   border-bottom: none;
 }
 
-/* line 204, ../../../src/assets/scss/_patterns.scss */
+/* line 199, ../../../src/assets/scss/_patterns.scss */
+.xx .global-nav {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #d8d8d8;
+  font-family: "Franklin ITC Pro Bold",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0 24px;
+}
+
+/* line 215, ../../../src/assets/scss/_patterns.scss */
 .xx .xx-nav {
   position: fixed;
   top: 0;
-  padding: 0.5em 2%;
+  padding: .5em 2%;
   left: 0;
   min-height: 30px;
   z-index: 10000;
@@ -236,37 +263,35 @@
 }
 
 @media (min-width: 40em) {
-  /* line 217, ../../../src/assets/scss/_patterns.scss */
+  /* line 227, ../../../src/assets/scss/_patterns.scss */
   .xx .xx-nav {
     text-align: left;
   }
 
-  /* line 222, ../../../src/assets/scss/_patterns.scss */
-  .xx .xx-nav,
-  .xx .xx-nav .inline-items {
+  /* line 231, ../../../src/assets/scss/_patterns.scss */
+  .xx .xx-nav, .xx .xx-nav .inline-items {
     float: left;
   }
 
-  /* line 226, ../../../src/assets/scss/_patterns.scss */
+  /* line 235, ../../../src/assets/scss/_patterns.scss */
   .xx .pattern-jump {
     float: right;
   }
 }
-/* line 232, ../../../src/assets/scss/_patterns.scss */
+/* line 240, ../../../src/assets/scss/_patterns.scss */
 .xx .pattern-jump {
-  margin: 0.75em 0;
+  margin: .75em 0;
 }
 
 /* Pattern overrides */
-/* line 239, ../../../src/assets/scss/_patterns.scss */
-.xx .sponsor-top,
-.xx .deadly-subtitle {
+/* line 245, ../../../src/assets/scss/_patterns.scss */
+.xx .sponsor-top, .xx .deadly-subtitle {
   position: relative;
   top: 0;
   left: 0;
 }
 
-/* line 245, ../../../src/assets/scss/_patterns.scss */
+/* line 251, ../../../src/assets/scss/_patterns.scss */
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, a {
   margin: 0;
   padding: 0;
@@ -278,22 +303,22 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
   font-weight: inherit;
 }
 
-/* line 256, ../../../src/assets/scss/_patterns.scss */
+/* line 262, ../../../src/assets/scss/_patterns.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
 
-/* line 260, ../../../src/assets/scss/_patterns.scss */
+/* line 266, ../../../src/assets/scss/_patterns.scss */
 img, object, embed {
   max-width: 100%;
 }
 
-/* line 264, ../../../src/assets/scss/_patterns.scss */
+/* line 270, ../../../src/assets/scss/_patterns.scss */
 [hidden] {
   display: none;
 }
 
-/* line 268, ../../../src/assets/scss/_patterns.scss */
+/* line 274, ../../../src/assets/scss/_patterns.scss */
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -301,84 +326,84 @@ html {
   overflow-y: scroll;
 }
 
-/* line 275, ../../../src/assets/scss/_patterns.scss */
+/* line 281, ../../../src/assets/scss/_patterns.scss */
 html, button, input, select, textarea {
   color: #222;
 }
 
-/* line 279, ../../../src/assets/scss/_patterns.scss */
+/* line 285, ../../../src/assets/scss/_patterns.scss */
 body {
   margin: 0;
   font-size: 1em;
   line-height: 1.4;
 }
 
-/* line 285, ../../../src/assets/scss/_patterns.scss */
+/* line 291, ../../../src/assets/scss/_patterns.scss */
 ul {
   list-style: none;
 }
 
-/* line 289, ../../../src/assets/scss/_patterns.scss */
+/* line 295, ../../../src/assets/scss/_patterns.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 293, ../../../src/assets/scss/_patterns.scss */
+/* line 299, ../../../src/assets/scss/_patterns.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 298, ../../../src/assets/scss/_patterns.scss */
+/* line 304, ../../../src/assets/scss/_patterns.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 302, ../../../src/assets/scss/_patterns.scss */
+/* line 308, ../../../src/assets/scss/_patterns.scss */
 ::-moz-selection {
   background: #ddd;
   color: #000;
   text-shadow: none;
 }
 
-/* line 308, ../../../src/assets/scss/_patterns.scss */
+/* line 314, ../../../src/assets/scss/_patterns.scss */
 ::selection {
   background: #ddd;
   color: #000;
   text-shadow: none;
 }
 
-/* line 314, ../../../src/assets/scss/_patterns.scss */
+/* line 320, ../../../src/assets/scss/_patterns.scss */
 img::selection {
   background: transparent;
 }
 
-/* line 318, ../../../src/assets/scss/_patterns.scss */
+/* line 324, ../../../src/assets/scss/_patterns.scss */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 322, ../../../src/assets/scss/_patterns.scss */
+/* line 328, ../../../src/assets/scss/_patterns.scss */
 a:hover, a:active {
   outline: 0;
 }
 
-/* line 326, ../../../src/assets/scss/_patterns.scss */
+/* line 332, ../../../src/assets/scss/_patterns.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 330, ../../../src/assets/scss/_patterns.scss */
+/* line 336, ../../../src/assets/scss/_patterns.scss */
 b, strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 
-/* line 334, ../../../src/assets/scss/_patterns.scss */
+/* line 340, ../../../src/assets/scss/_patterns.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 338, ../../../src/assets/scss/_patterns.scss */
+/* line 344, ../../../src/assets/scss/_patterns.scss */
 hr {
   display: block;
   height: 1px;
@@ -388,52 +413,52 @@ hr {
   padding: 0;
 }
 
-/* line 348, ../../../src/assets/scss/_patterns.scss */
+/* line 353, ../../../src/assets/scss/_patterns.scss */
 ins {
   background: #ff9;
   color: #000;
   text-decoration: none;
 }
 
-/* line 354, ../../../src/assets/scss/_patterns.scss */
+/* line 359, ../../../src/assets/scss/_patterns.scss */
 mark {
   background: #ff0;
   color: #000;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-/* line 361, ../../../src/assets/scss/_patterns.scss */
+/* line 366, ../../../src/assets/scss/_patterns.scss */
 pre, code, kbd, samp {
   font-family: monospace,serif;
   _font-family: 'courier new',monospace;
   font-size: 1em;
 }
 
-/* line 367, ../../../src/assets/scss/_patterns.scss */
+/* line 372, ../../../src/assets/scss/_patterns.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 373, ../../../src/assets/scss/_patterns.scss */
+/* line 378, ../../../src/assets/scss/_patterns.scss */
 q {
   quotes: none;
 }
 
-/* line 377, ../../../src/assets/scss/_patterns.scss */
+/* line 382, ../../../src/assets/scss/_patterns.scss */
 q:before, q:after {
   content: "";
   content: none;
 }
 
-/* line 382, ../../../src/assets/scss/_patterns.scss */
+/* line 387, ../../../src/assets/scss/_patterns.scss */
 small {
   font-size: 85%;
 }
 
-/* line 386, ../../../src/assets/scss/_patterns.scss */
+/* line 391, ../../../src/assets/scss/_patterns.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -441,51 +466,51 @@ sub, sup {
   vertical-align: baseline;
 }
 
-/* line 393, ../../../src/assets/scss/_patterns.scss */
+/* line 398, ../../../src/assets/scss/_patterns.scss */
 sup {
-  top: -0.5em;
+  top: -.5em;
 }
 
-/* line 397, ../../../src/assets/scss/_patterns.scss */
+/* line 402, ../../../src/assets/scss/_patterns.scss */
 sub {
-  bottom: -0.25em;
+  bottom: -.25em;
 }
 
-/* line 401, ../../../src/assets/scss/_patterns.scss */
+/* line 406, ../../../src/assets/scss/_patterns.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
 }
 
-/* line 407, ../../../src/assets/scss/_patterns.scss */
+/* line 412, ../../../src/assets/scss/_patterns.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 411, ../../../src/assets/scss/_patterns.scss */
+/* line 416, ../../../src/assets/scss/_patterns.scss */
 figure {
   margin: 0;
 }
 
-/* line 415, ../../../src/assets/scss/_patterns.scss */
+/* line 420, ../../../src/assets/scss/_patterns.scss */
 form {
   margin: 0;
 }
 
-/* line 419, ../../../src/assets/scss/_patterns.scss */
+/* line 424, ../../../src/assets/scss/_patterns.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 425, ../../../src/assets/scss/_patterns.scss */
+/* line 430, ../../../src/assets/scss/_patterns.scss */
 label, input[type=button], input[type=submit], button {
   cursor: pointer;
 }
 
-/* line 429, ../../../src/assets/scss/_patterns.scss */
+/* line 434, ../../../src/assets/scss/_patterns.scss */
 legend {
   border: 0;
   *margin-left: -7px;
@@ -493,7 +518,7 @@ legend {
   white-space: normal;
 }
 
-/* line 436, ../../../src/assets/scss/_patterns.scss */
+/* line 441, ../../../src/assets/scss/_patterns.scss */
 button, input, select, textarea {
   font-size: 100%;
   margin: 0;
@@ -501,24 +526,24 @@ button, input, select, textarea {
   *vertical-align: middle;
 }
 
-/* line 443, ../../../src/assets/scss/_patterns.scss */
+/* line 448, ../../../src/assets/scss/_patterns.scss */
 button, input {
   line-height: normal;
 }
 
-/* line 447, ../../../src/assets/scss/_patterns.scss */
+/* line 452, ../../../src/assets/scss/_patterns.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
   *overflow: visible;
 }
 
-/* line 453, ../../../src/assets/scss/_patterns.scss */
+/* line 458, ../../../src/assets/scss/_patterns.scss */
 button[disabled], input[disabled] {
   cursor: default;
 }
 
-/* line 457, ../../../src/assets/scss/_patterns.scss */
+/* line 462, ../../../src/assets/scss/_patterns.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
@@ -526,65 +551,65 @@ input[type="checkbox"], input[type="radio"] {
   *height: 13px;
 }
 
-/* line 464, ../../../src/assets/scss/_patterns.scss */
+/* line 469, ../../../src/assets/scss/_patterns.scss */
 input[type="search"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
-/* line 470, ../../../src/assets/scss/_patterns.scss */
+/* line 475, ../../../src/assets/scss/_patterns.scss */
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/* line 474, ../../../src/assets/scss/_patterns.scss */
+/* line 479, ../../../src/assets/scss/_patterns.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 479, ../../../src/assets/scss/_patterns.scss */
+/* line 484, ../../../src/assets/scss/_patterns.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
   resize: vertical;
 }
 
-/* line 488, ../../../src/assets/scss/_patterns.scss */
+/* line 493, ../../../src/assets/scss/_patterns.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 493, ../../../src/assets/scss/_patterns.scss */
+/* line 498, ../../../src/assets/scss/_patterns.scss */
 th {
-  font-weight: bold;
+  font-weight: 700;
   vertical-align: bottom;
 }
 
-/* line 498, ../../../src/assets/scss/_patterns.scss */
+/* line 503, ../../../src/assets/scss/_patterns.scss */
 td {
-  font-weight: normal;
+  font-weight: 400;
   vertical-align: top;
 }
 
-/* line 503, ../../../src/assets/scss/_patterns.scss */
+/* line 508, ../../../src/assets/scss/_patterns.scss */
 .chromeframe {
-  margin: 0.2em 0;
+  margin: .2em 0;
   background: #ccc;
-  color: black;
-  padding: 0.2em 0;
+  color: #000;
+  padding: .2em 0;
 }
 
-/* line 510, ../../../src/assets/scss/_patterns.scss */
+/* line 515, ../../../src/assets/scss/_patterns.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 516, ../../../src/assets/scss/_patterns.scss */
+/* line 521, ../../../src/assets/scss/_patterns.scss */
 html, body {
   font: normal 18px/30px "Georgia Pro",georgia,serif;
   text-rendering: optimizeLegibility;
@@ -593,34 +618,34 @@ html, body {
   height: 100%;
 }
 
-/* line 524, ../../../src/assets/scss/_patterns.scss */
+/* line 529, ../../../src/assets/scss/_patterns.scss */
 a {
   color: #2455c3;
   text-decoration: none;
 }
 
-/* line 529, ../../../src/assets/scss/_patterns.scss */
+/* line 534, ../../../src/assets/scss/_patterns.scss */
 a:hover, a:focus {
   text-decoration: underline;
 }
 
-/* line 533, ../../../src/assets/scss/_patterns.scss */
+/* line 538, ../../../src/assets/scss/_patterns.scss */
 p {
-  -moz-font-feature-settings: "liga=1, dlig=1, onum=1";
-  -moz-font-feature-settings: "liga", "dlig", "onum";
-  -ms-font-feature-settings: "liga", "dlig", "onum";
-  -webkit-font-feature-settings: "liga", "dlig", "onum";
-  -o-font-feature-settings: "liga", "dlig", "onum";
-  font-feature-settings: "liga", "dlig", "onum";
+  -moz-font-feature-settings: "liga=1,dlig=1,onum=1";
+  -moz-font-feature-settings: liga,dlig,onum;
+  -ms-font-feature-settings: liga,dlig,onum;
+  -webkit-font-feature-settings: liga,dlig,onum;
+  -o-font-feature-settings: liga,dlig,onum;
+  font-feature-settings: liga,dlig,onum;
 }
 
-/* line 542, ../../../src/assets/scss/_patterns.scss */
+/* line 547, ../../../src/assets/scss/_patterns.scss */
 html[data-useragent*='Chrome'][data-platform*='Mac'] p {
   -webkit-font-feature-settings: normal;
   font-feature-settings: normal;
 }
 
-/* line 547, ../../../src/assets/scss/_patterns.scss */
+/* line 552, ../../../src/assets/scss/_patterns.scss */
 :target:not(#comments):not(.global-nav) {
   -webkit-animation: target-fade 2s 1;
   -moz-animation: target-fade 2s 1;
