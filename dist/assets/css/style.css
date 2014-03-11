@@ -787,3 +787,49 @@ pre[class*="language-"] {
 .token.entity {
   cursor: help;
 }
+
+/* line 8, ../../../src/assets/scss/_andeerscom.scss */
+.entry-title,
+.page-title {
+  margin-bottom: 20px;
+  margin-top: 0px;
+  color: #444;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+}
+/* line 13, ../../../src/assets/scss/_andeerscom.scss */
+.entry-title a,
+.page-title a {
+  color: #444;
+  text-decoration: none;
+}
+
+/* line 18, ../../../src/assets/scss/_andeerscom.scss */
+.hentry h2 {
+  color: #444;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+/* line 23, ../../../src/assets/scss/_andeerscom.scss */
+.entry-header,
+.page-header {
+  position: relative;
+}
+
+/* line 26, ../../../src/assets/scss/_andeerscom.scss */
+.post-meta {
+  position: relative;
+  color: #9EABB3;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* line 31, ../../../src/assets/scss/_andeerscom.scss */
+.readtime {
+  position: absolute;
+  right: 0px;
+}

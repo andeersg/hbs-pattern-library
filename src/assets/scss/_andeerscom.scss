@@ -1,0 +1,34 @@
+@mixin font($s: 16px, $w: 300) {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: $s;
+  font-weight: $w;
+}
+
+.entry-title,
+.page-title {
+  margin-bottom: 20px;
+  margin-top: 0px;
+  color: #444;
+  @include font(35px, 300);
+  a {
+    color: #444;
+    text-decoration: none;
+  }
+}
+.hentry h2 {
+  color: #444;
+  @include font(26px, 300);
+}
+.entry-header,
+.page-header {
+  position: relative;
+}
+.post-meta {
+  position: relative;
+  color: #9EABB3;
+  @include font(14px, 300);
+}
+.readtime {
+  position: absolute;
+  right: 0px;
+}
